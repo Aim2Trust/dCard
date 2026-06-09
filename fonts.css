@@ -1,0 +1,112 @@
+/* ═══════════════════════════════════════════════════════════
+   A2T — FONT TOOLKIT  ·  fonts.css
+   Adobe Typekit kit: kip1exq
+   Load via:  <link rel="stylesheet" href="https://use.typekit.net/kip1exq.css">
+   ═══════════════════════════════════════════════════════════
+
+   FONT INCLUDED
+   ─────────────
+   Halogen  (by Typotheque)
+   ├─ font-family: "halogen"
+   ├─ Weight 300  →  Light
+   ├─ Weight 400  →  Regular
+   ├─ Weight 500  →  Medium
+   ├─ Weight 700  →  Bold
+   └─ Weight 900  →  Black
+
+   All weights are upright (normal style) only.
+   Halogen is a geometric condensed sans-serif — ideal for
+   display headings, labels, all-caps titles and compact UI.
+
+   USAGE IN HTML
+   ─────────────
+   Option A — <link> tag (recommended, non-blocking):
+     <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+     <link rel="stylesheet" href="https://use.typekit.net/kip1exq.css">
+
+   Option B — CSS @import (inside a stylesheet):
+     @import url("https://use.typekit.net/kip1exq.css");
+
+   USAGE IN CSS
+   ─────────────
+   font-family: "halogen", sans-serif;
+   font-weight: 300 | 400 | 500 | 700 | 900;
+
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Typekit kit import ──────────────────────────────────── */
+@import url("https://use.typekit.net/kip1exq.css");
+
+/* ── Utility classes — Halogen weights ──────────────────── */
+
+.font-halogen,
+.tk-halogen {
+  font-family: "halogen", sans-serif;
+}
+
+.halogen-light {
+  font-family: "halogen", sans-serif;
+  font-weight: 300;
+}
+
+.halogen-regular {
+  font-family: "halogen", sans-serif;
+  font-weight: 400;
+}
+
+.halogen-medium {
+  font-family: "halogen", sans-serif;
+  font-weight: 500;
+}
+
+.halogen-bold {
+  font-family: "halogen", sans-serif;
+  font-weight: 700;
+}
+
+.halogen-black {
+  font-family: "halogen", sans-serif;
+  font-weight: 900;
+}
+
+/* ── Recommended pairing scale for A2T card ─────────────── */
+
+/*
+  Display / Hero (name banner, service titles)
+    font-family: "halogen", sans-serif;
+    font-weight: 700 or 900;
+    letter-spacing: 0.08em – 0.18em;
+    text-transform: uppercase;
+
+  UI Labels (G. GRAL., contact labels, chips)
+    font-family: "halogen", sans-serif;
+    font-weight: 500 or 600;
+    letter-spacing: 0.2em – 0.35em;
+    text-transform: uppercase;
+
+  Body / Address (sub-text)
+    font-family: "Cormorant Garamond", Georgia, serif;   ← Google Fonts
+    font-weight: 400;
+
+  Fine print / taglines
+    font-family: "halogen", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+*/
+
+/* ── CSS custom properties shorthand ────────────────────── */
+:root {
+  --font-halogen: "halogen", sans-serif;
+
+  /* Named weight aliases */
+  --fw-light:   300;
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-bold:    700;
+  --fw-black:   900;
+
+  /* Recommended letter-spacing per use case */
+  --ls-display: 0.12em;
+  --ls-label:   0.28em;
+  --ls-fine:    0.18em;
+}

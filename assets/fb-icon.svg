@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90.33 90">
+  <defs>
+    <style>
+      .g {
+        fill: url(#e);
+      }
+    </style>
+    <linearGradient id="e" data-name="New Gradient Swatch 1" x1="87.88" y1="59.87" x2="2.45" y2="30.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9c621f"/>
+      <stop offset=".16" stop-color="#f9cb5a"/>
+      <stop offset=".29" stop-color="#da9410"/>
+      <stop offset=".36" stop-color="#da9410"/>
+      <stop offset=".46" stop-color="#a77520"/>
+      <stop offset=".6" stop-color="#a77520"/>
+      <stop offset=".76" stop-color="#f9cb5a"/>
+      <stop offset=".86" stop-color="#f9cb5a"/>
+      <stop offset="1" stop-color="#da9410"/>
+    </linearGradient>
+  </defs>
+  <g id="c" data-name="Digiatl Card">
+    <g id="d" data-name="Logo">
+      <path id="f" data-name="Initiator" class="g" d="M90.33,45.17C90.33,20.22,70.11,0,45.17,0S0,20.22,0,45.17c0,21.18,14.58,38.95,34.25,43.84v-30.03h-9.31v-13.8h9.31v-5.95c0-15.37,6.96-22.5,22.05-22.5,2.86,0,7.8.56,9.82,1.12v12.51c-1.07-.11-2.92-.17-5.22-.17-7.41,0-10.27,2.81-10.27,10.1v4.88h14.75l-2.53,13.8h-12.22v31.03c22.36-2.7,39.69-21.74,39.69-44.83Z"/>
+    </g>
+  </g>
+</svg>
