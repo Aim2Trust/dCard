@@ -6,27 +6,41 @@
 /* ── Design Tokens ─────────────────────────────── */
 :root {
   /* Gold palette */
-  --gold-light:   #F5D060;
-  --gold-mid:     #D4A820;
-  --gold-dark:    #9A6810;
-  --gold-deep:    #5A3C08;
+  --gold-light:   #F9CB5A;
+  --gold-mid:     #A77520;
+  --gold-dark:    #9C621F;
+  --banana:       #DA9410;
 
   /* Gradients */
-  --grad-gold: linear-gradient(135deg, #F5D060 0%, #C89A30 50%, #9A6810 100%);
-  --grad-gold-v: linear-gradient(180deg, #F5D060 0%, #9A6810 100%);
+  /*--grad-gold: linear-gradient(135deg, #F9CB5A 0%, #DA9410 50%, #9C621F 100%);*/
+  --goldgrad-hdr: linear-gradient(
+    113deg in srgb-linear,
+    lab(47% 20 45) 0%,
+    lab(84% 7 60)  16%,
+    lab(67% 20 68) 29%,
+    lab(67% 20 68) 36%,
+    lab(53% 14 51) 46%,
+    lab(53% 14 51) 60%,
+    lab(84% 7 60)  76%,
+    lab(84% 7 60)  86%,
+    lab(67% 20 68) 100%
+  );
+  --goldgrad: linear-gradient(113deg, #9b6120 0%, #f6cb5c 16%, #d89415 29%, #d89415 36%, #a57520 46%, #a57520 60%, #f6cb5c 76%, #f6cb5c 86%, #d89415 100%);
+
+  --grad-gold-v: linear-gradient(180deg, #F9CB5A 0%, #9C621F 100%);
   --grad-dark: linear-gradient(160deg, #1a1a1a 0%, #2c2008 100%);
 
   /* Neutrals */
-  --bg-card:      #F0EEE9;
+  --bg-card:      #2e3032;
   --bg-dark:      #25282A;
   --text-dark:    #25282a;
   --text-mid:     #3b3d3f;
   --white:        #F0EEE9;
 
   /* Shadows */
-  --shadow-card:  0 24px 64px rgba(0,0,0,0.45), 0 4px 16px rgba(0,0,0,0.25);
+  --shadow-card:  0 24px 64px rgba(19,20,21,0.45), 0 4px 16px rgba(19,20,21,0.25);
   --shadow-gold:  0 4px 24px rgba(218,148,16,0.35);
-  --shadow-fab:   0 8px 32px rgba(0,0,0,0.4), 0 2px 8px rgba(218,148,16,0.3);
+  --shadow-fab:   0 8px 32px rgba(19,20,21,0.4), 0 2px 8px rgba(218,148,16,0.3);
 
   /* Card dimensions — mobile-first portrait card */
   --card-w:       min(100vw, 420px);
@@ -301,7 +315,7 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 0em;
-  background: var(--grad-gold);
+  background: var(--goldgrad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -372,7 +386,7 @@ body {
 
 /* Gold icon (vCard) */
 .icon-gold {
-  background: var(--grad-gold);
+  background:var(--goldgrad);
 }
 
 /* Facebook blue */
@@ -466,7 +480,7 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: -0.08em;
-  background: var(--grad-gold);
+  background: var(--goldgrad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -497,7 +511,7 @@ body {
   font-weight: 300;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  background: var(--grad-gold);
+  background: var(--goldgrad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -516,6 +530,17 @@ body {
 .address-highlight {
   color: var(--white);
   font-weight: 300;
+}
+
+.address-link {
+  font-family: var(--font-ui);
+  font-size: 0.76rem;
+  line-height: 1.6;
+  font-weight: 600;	
+  background: var(--goldgrad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* ═══════════════════════════════════════════════
@@ -558,7 +583,7 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background: var(--grad-gold);
+  background: var(--goldgrad);
   color: #F0EEE9;
   font-size: 1.9rem;
   font-weight: 300;
@@ -691,7 +716,7 @@ body {
   transform: translateX(-50%) translateY(20px);
   background: #25282A;
   border: 1px solid rgba(218,148,16,0.3);
-  color: var(--gold-light);
+  color: var(--banana);
   font-family: var(--font-ui);
   font-size: 0.85rem;
   font-weight: 300;
